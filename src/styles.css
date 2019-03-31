@@ -1,0 +1,54 @@
+.container {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  background-color: #000;
+  color: #fff;
+}
+
+header > h1 {
+  font-size: 1.5em;
+}
+
+.logo > img {
+  width: 70px;
+  height: 70px;
+  margin-right: 1em;
+}
+
+input {
+  margin: 2em;
+  width: 50vw;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme > img {
+  margin-bottom: 2em;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ddd;
+}
+
+.meme > .caption {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-download {
+  padding: 0.2em 0.8em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
