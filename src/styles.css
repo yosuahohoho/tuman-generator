@@ -1,54 +1,72 @@
-.container {
+body {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
-  text-align: center;
 }
 
 header {
   display: flex;
   justify-content: center;
-  padding: 1em;
+  margin: 0;
   background-color: #000;
   color: #fff;
 }
 
-header > h1 {
-  font-size: 1.5em;
+@media screen and (max-width: 32em) {
+  header {
+    font-size: 0.875em;
+  }
 }
 
 .logo > img {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  margin-top: 1.2em;
   margin-right: 1em;
 }
 
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5em;
+  text-align: center;
+}
+
 input {
-  margin: 2em;
-  width: 50vw;
+  width: 60%;
+  padding: .5em;
+  margin: 1em;
 }
 
 .meme {
   position: relative;
+  margin: .8em auto;
+  max-width: 400px;
+  padding: 1em;
+  text-align: center;
 }
 
-.meme > img {
-  margin-bottom: 2em;
-  width: 300px;
-  height: 300px;
-  border: 1px solid #ddd;
+.meme-img > img {
+  width: 100%;
+  border: 1px solid #eee;
 }
 
-.meme > .caption {
+.meme-text > h2 {
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 2%;
+  right: 10%;
+  left: 10%;
+  bottom: 60%;
 }
 
-.btn-download {
-  padding: 0.2em 0.8em;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
+@media screen and (max-width: 32em) {
+  .meme-text > h2 {
+    font-size: 1.2em;
+  }  
+}
+
+.meme-text-tuman > h2 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  
 }
